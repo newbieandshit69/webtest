@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troll Page</title>
+    <title>GGHoaLe's TOP SECRET</title>
     <style>
         body {
             display: flex;
@@ -32,13 +32,17 @@
             width: 300px; /* Adjust the size as needed */
             height: auto;
         }
-        #trollButton:hover + #hiddenImage {
-            display: block;
-        }
     </style>
 </head>
 <body>
-    <button id="trollButton">Hover Over Me!</button>
+    <button id="trollButton">GGHOALE's TOP SECRET</button>
     <img id="hiddenImage" src="./yakuzahoa.jpg" alt="Surprise!" />
+    
+    <script>
+        document.getElementById('trollButton').addEventListener('click', function() {
+            const img = document.getElementById('hiddenImage');
+            img.style.display = img.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>
