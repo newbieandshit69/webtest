@@ -154,9 +154,49 @@ html {
 
 }
 
+/* GUIDE */
 
 
+/* guide container */
+#guide { 
+    flex-direction: column;
+    margin: 50px 0;
+    background-image: url(./asset/bg-3.jpg);
+    height: fit-content;
+}
 
+
+.combo-row {
+    margin: 75px auto 20px auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.combo-row img {
+    width: 200px;
+    height: auto;
+    margin: 20px 20px;
+}
+
+.combo-row h3 {
+    font-family: "Bangers", serif;
+    font-size: 50px;
+    margin: 20px auto 0 auto;
+    
+}
+
+.combo-row p {
+    max-width: 50%;
+    word-wrap: break-word;
+    font-family: "Roboto Mono", serif;
+    font-size: 20px;
+}
+
+
+.practice-container {
+    margin: 50px 0;
+}
 
 /* Glowing Effect */
 .about-me-background::before {
@@ -195,5 +235,46 @@ html {
         background-position: 300px 0;
     }
 }
+
+
+/* ELectric border */
+
+.electric-border {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+    animation: electric-border-animation 1.5s infinite alternate;
+  }
+
+  .electric-border::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 10px;
+    z-index: -1;
+    background: rgba(0, 0, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.8), 0 0 30px rgba(0, 0, 255, 0.8), 0 0 60px rgba(0, 0, 255, 0.8);
+  }
+
+  .electric-border img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  @keyframes electric-border-animation {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6), 0 0 30px rgba(0, 0, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(0, 0, 255, 1), 0 0 25px rgba(0, 0, 255, 0.8), 0 0 50px rgba(0, 0, 255, 0.6);
+    }
+  }
 
 
