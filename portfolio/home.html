@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/asset/favicon.jpg">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Hurricane&family=Sacramento&display=swap" rel="stylesheet">
+
+
+    <!-- Autoplay Audio-->
+    <audio autoplay id="myaudio" autoplay loop>
+        <source src="/asset/bg-audio.mp3">
+    </audio>
+      
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.2;
+
+        audio.onplay = function() {
+        audio.muted = false;
+        };
+     </script>
+    
+</head>
+<body>
+    <!-- Navigation bar-->
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#About">About me</a>
+        <a href="#guide">Guide</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="section">
+        <div class="welcome-box">
+            <p class="welcome">Welcome!</p>
+            <p class="welcome-description">"Your will, my hands."</p>
+        </div>
+        <div class="detail-box">
+            <p>
+                Follow me and become the DEADLIEST Lee Sin world. Learn from the best!
+            </p>
+        </div>
+    </div>
+    <!-- About me -->
+    <div id="About" class="section">
+        <div class="avatar-card"></div>
+        <div class="about-me-background">
+            <p class="basic-info">Name: GGHoaLe</p>
+            <p class="basic-info">Age: 17</p>
+            <div class="champion-list">
+                <p class="basic-info">Top 5 Champions: </p>
+                <img src="./asset/lee.jpg">
+                <img src="./asset/lee.jpg"> 
+                <img src="./asset/lee.jpg">
+                <img src="./asset/lee.jpg"> 
+                <img src="./asset/lee.jpg"> 
+            </div>
+            <p class="basic-info">Highest rank: KR Challenger<img src="./asset/challengericon.png"></p>
+            <p class="basic-info">Teams played: SKT T1</p>
+            <p class="basic-info">"I once quit League... but League never quit me."</p>
+        </div>
+    </div>
+    <!-- Guide -->
+     <div id="guide" class="section">
+        <div class="combo-row">
+            <img class="electric-border" src="./asset/home-lee.gif" alt="Combo1">
+            <div>
+                <h3>THE BASIC COMBO</h3>
+                <p>The simplest Lee Sin combo involves using Q (Sonic Wave) to land a skill shot on your target, 
+                followed by an auto attack for additional damage. This combo is great for poking and applying quick 
+                pressure in lane.</p>
+            </div>
+        </div>
+
+        <div class="combo-row">
+            <div style="text-align: right;">
+                <h3>THE INTERMEDIATE COMBO</h3>
+                <p style="margin-left: 650px;">
+                    After hitting your Q, follow up with an auto attack, then use E (Tempest) to deal AoE damage around you. W (Safeguard) can be used immediately after for
+                    repositioning or shielding, providing some extra sustain or escape potential.</p>
+            </div>
+            <img class="electric-border" src="./asset/home-lee-2.gif" alt="Combo2">
+        </div>
+
+        <div class="combo-row">
+            <img class="electric-border" src="./asset/home-lee-3.gif" alt="Combo3">
+            <div>
+                <h3>THE ADVANCED COMBO</h3>
+                <p>
+                    For a more advanced approach, use Q to land the initial hit, then auto attack and follow up with E (Tempest). After that, use a Ward Jump with W (Safeguard)
+                    to reposition quickly, and finish the combo with R (Dragon's Rage) to kick your enemy away, often into a wall for maximum damage.
+                </p>
+            </div>
+        </div>
+
+        <div class="combo-row">
+            <div style="text-align: right;">
+                <h3>THE PRO COMBO</h3>
+                <p style="margin-left: 650px;">
+                    Starts with Flash to instantly close the gap on your target. After that, land Q, follow up with E (Tempest), and quickly perform a Ward Jump using W (Safeguard).
+                    Finish the combo with R (Dragon's Rage) to knock the enemy back, often isolating them from their team or securing a kill.
+                </p>
+            </div>
+            <img class="electric-border" src="./asset/home-lee-4.gif" alt="Combo2">
+        </div>
+    </div>
+
+    <!-- highlights -->
+    <div id="highlights" class="section">
+        
+        <div class="left-container">
+            <img width="300px" src="asset/hl1.gif">
+            <h1>無家可歸的功夫</h1>
+            <p>
+                他毫不猶豫地踢出一記令人震驚的 InSec 踢球，將敵人直接踢進了他隊伍等待的懷抱中。儘管李青外表粗獷，包裝不匹配，手杖也折斷了，
+                但他證明了真正的大師並不在於財富或外表，而在於原始的、未經打磨的力量，擊敗對手並扭轉局勢，讓比賽對他的球隊有利。
+            </p>
+        </div>
+
+        <div class="right-container">
+            <iframe  src="https://www.youtube.com/embed/u_F90_o3Qv4" title="Bắt sâu về tổ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/NdjUxOpjBlU" title="Né mập địt Gragas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/KL3OpgNZvQE" title="ÔNG VUA SÂN CỎ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact" class="section">
+        <div class="contact-form">
+                <h1>GET COACHED!</h1>
+                <div class="contact-form-block">
+                        <div>
+                            <form class="form">
+                                <div>
+                                    <input class="placeholders" type="text" id="name" name="name" required placeholder="Name">
+                                </div>
+
+                                <div>
+                                    <input class="placeholders" type="text" id="email" name="email" required placeholder="email">
+                                </div>
+
+                                <div>
+                                    <select id="ranks" name="ranks">
+                                        <option disabled hidden selected>Current rank</option>
+                                        <option value="volvo">Diamond</option>
+                                        <option value="saab">Master</option>
+                                        <option value="fiat">Grandmaster</option>
+                                        <option value="audi">Challenger</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select id="ranks" name="ranks">
+                                        <option disabled hidden selected>Desired rank</option>
+                                        <option value="volvo">Diamond</option>
+                                        <option value="saab">Master</option>
+                                        <option value="fiat">Grandmaster</option>
+                                        <option value="audi">Challenger</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <textarea name="message" rows="10" cols="30" required placeholder="Additional note..."></textarea>
+                                </div>
+
+
+                                <button class="button-64" role="button"><span class="text">LET'S GO</span></button>
+
+
+                            </form>
+                        </div>
+                </div>
+        </div>
+
+        <div class="contact-info">
+            <img src="/asset/contact-avatar.gif">
+            <h1>GGHoaLe</h1>
+            <div class="contact-box">
+                <h2><span class="icon">📞</span>0123456789</h2>
+            </div>
+            <div class="contact-box">
+                <h2><span class="icon">📧</span>gghoalee@gmail.com</h2>
+            </div>
+
+            <div class="social-box">
+                <a href="https://facebook.com" target="_blank" ><img src="/asset/social-fb.png"></a>
+                <a href="https://youtube.com" target="_blank "><img src="/asset/social-youtube.png"></a>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
